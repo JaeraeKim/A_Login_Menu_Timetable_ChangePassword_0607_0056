@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="8"
+    android:rowCount="13"
+    android:orientation="horizontal"
+    android:id="@+id/activity_trainer_timetable"
+    tools:context=".TrainerTimetable">
+
+    <TextView android:id="@+id/textViewBlank" android:text=" " />
+    <TextView android:id="@+id/textViewMon" android:text="Mon" />
+    <TextView android:id="@+id/textViewTue" android:text="Tue" />
+    <TextView android:id="@+id/textViewWed" android:text="Wed" />
+    <TextView android:id="@+id/textViewThu" android:text="Thu" />
+    <TextView android:id="@+id/textViewFri" android:text="Fri" />
+    <TextView android:id="@+id/textViewSat" android:text="Sat" />
+    <TextView android:id="@+id/textViewSun" android:text="Sun" />
+
+    <TextView android:id="@+id/textView8" android:text="8:00" />
+    <Button
+        android:id="@+id/buttonMon8"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonTue8"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee"
+        android:layout_row="0" />
+    <Button
+        android:id="@+id/buttonWed8"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonThu8"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonFri8"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSat8"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSun8"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+
+    <TextView android:id="@+id/textView9" android:text="9:00" />
+    <Button
+        android:id="@+id/buttonMon9"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonTue9"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee"
+        android:layout_row="0" />
+    <Button
+        android:id="@+id/buttonWed9"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonThu9"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonFri9"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSat9"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSun9"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+
+    <TextView android:id="@+id/textView10" android:text="10:00" />
+    <Button
+        android:id="@+id/buttonMon10"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonTue10"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee"
+        android:layout_row="0" />
+    <Button
+        android:id="@+id/buttonWed10"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonThu10"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonFri10"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSat10"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSun10"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+
+    <TextView android:id="@+id/textView11" android:text="11:00" />
+    <Button
+        android:id="@+id/buttonMon11"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonTue11"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee"
+        android:layout_row="0" />
+    <Button
+        android:id="@+id/buttonWed11"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonThu11"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonFri11"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSat11"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSun11"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+
+    <TextView android:id="@+id/textView12" android:text="12:00" />
+    <Button
+        android:id="@+id/buttonMon12"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonTue12"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee"
+        android:layout_row="0" />
+    <Button
+        android:id="@+id/buttonWed12"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonThu12"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonFri12"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSat12"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSun12"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+
+    <TextView android:id="@+id/textView13" android:text="13:00" />
+    <Button
+        android:id="@+id/buttonMon13"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonTue13"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee"
+        android:layout_row="0" />
+    <Button
+        android:id="@+id/buttonWed13"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonThu13"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonFri13"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSat13"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSun13"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+
+    <TextView android:id="@+id/textView14" android:text="14:00" />
+    <Button
+        android:id="@+id/buttonMon14"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonTue14"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee"
+        android:layout_row="0" />
+    <Button
+        android:id="@+id/buttonWed14"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonThu14"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonFri14"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSat14"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSun14"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+
+    <TextView android:id="@+id/textView15" android:text="15:00" />
+    <Button
+        android:id="@+id/buttonMon15"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonTue15"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee"
+        android:layout_row="0" />
+    <Button
+        android:id="@+id/buttonWed15"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonThu15"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonFri15"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSat15"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSun15"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+
+    <TextView android:id="@+id/textView16" android:text="16:00" />
+    <Button
+        android:id="@+id/buttonMon16"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonTue16"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee"
+        android:layout_row="0" />
+    <Button
+        android:id="@+id/buttonWed16"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonThu16"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonFri16"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSat16"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSun16"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+
+    <TextView android:id="@+id/textView17" android:text="17:00" />
+    <Button
+        android:id="@+id/buttonMon17"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonTue17"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee"
+        android:layout_row="0" />
+    <Button
+        android:id="@+id/buttonWed17"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonThu17"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonFri17"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSat17"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSun17"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+
+    <TextView android:id="@+id/textView18" android:text="18:00" />
+    <Button
+        android:id="@+id/buttonMon18"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonTue18"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee"
+        android:layout_row="0" />
+    <Button
+        android:id="@+id/buttonWed18"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonThu18"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonFri18"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSat18"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSun18"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+
+    <TextView android:id="@+id/textView19" android:text="19:00" />
+    <Button
+        android:id="@+id/buttonMon19"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonTue19"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee"
+        android:layout_row="0" />
+    <Button
+        android:id="@+id/buttonWed19"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonThu19"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonFri19"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSat19"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSun19"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+
+    <TextView android:id="@+id/textView20" android:text="20:00" />
+    <Button
+        android:id="@+id/buttonMon20"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonTue20"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee"
+        android:layout_row="0" />
+    <Button
+        android:id="@+id/buttonWed20"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonThu20"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonFri20"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSat20"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+    <Button
+        android:id="@+id/buttonSun20"
+        android:background="#3000"
+        android:layout_width="95px"
+        android:layout_height="70px"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:text=" "
+        android:textAllCaps="false"
+        android:textColor="#eeeeee" />
+
+</GridLayout>
