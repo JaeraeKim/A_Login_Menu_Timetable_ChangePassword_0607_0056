@@ -17,9 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MenuActivity" />
-        <activity android:name=".TrainerTimetable" />
-        <activity android:name=".MemberTimetable" />
         <activity android:name=".ChangePassword"></activity>
+        <activity android:name=".TimeTable"></activity>
     </application>
 
 </manifest>
