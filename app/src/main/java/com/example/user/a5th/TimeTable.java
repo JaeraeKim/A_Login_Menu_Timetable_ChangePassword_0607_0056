@@ -108,12 +108,47 @@ public class TimeTable extends AppCompatActivity {
                 String sName=cusName.toString();
                 if(charCount>1) {
                     if(!sName.equals(user_name)) {
-                        Log.d(TAG, "dd" + sName + "   " + user_name);
                         new AlertDialog.Builder(TimeTable.this).setTitle("Already Reserved").show();
                         return;
                     } else {
+                        int Count=0;
+                        for(int k=0; k<temp.length(); k++) {
+                            if (Count == rt) {
+                                sb.delete(k, k + sName.length());
+                                break;
+                            }
+                            if(sb.charAt(k)==',') {
+                                Count++;
+                            }
+                        }
+
+                        final String guichan=sb.toString();
+                        final DocumentReference DRef=db.collection("customerList").document(trainer).collection("schedule").document("schedule");
+                        db.runTransaction(new Transaction.Function<Void>() {
+                            @Override
+                            public Void apply(Transaction transaction) throws FirebaseFirestoreException {
+                                DocumentSnapshot snapshot = transaction.get(DRef);
+                                transaction.update(DRef, wd, guichan);
+
+                                return null;
+                            }
+                        }).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void aVoid) {
+                                Log.d(TAG, "Transaction success!" + guichan);
+                            }
+                        })
+                                .addOnFailureListener(new OnFailureListener() {
+                                    @Override
+                                    public void onFailure(@NonNull Exception e) {
+                                        Log.w(TAG, "Transaction failure.", e);
+                                    }
+                                });
+
+
                         buttons[rt][yoil].setText(" ");
-                        buttons[rt][yoil].getBackground().setColorFilter(0x40000000, PorterDuff.Mode.MULTIPLY);
+                        buttons[rt][yoil].setBackgroundColor(Color.parseColor("#40000000"));
+                        new AlertDialog.Builder(TimeTable.this).setTitle("Reservation Canceled").show();
                         return;
                     }
                 }
@@ -124,6 +159,8 @@ public class TimeTable extends AppCompatActivity {
                 dotCount++;
             }
         }
+
+        //
 
         final String makeRSV=sb.toString();
         final DocumentReference col=db.collection("customerList").document(trainer).collection("schedule").document("schedule");
@@ -171,15 +208,15 @@ public class TimeTable extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                             if(task.isSuccessful());
-                            DocumentSnapshot docc=task.getResult();
-                            Log.d(TAG, docc.getId() + " => " + docc.getData());
-                            trainerName=docc.getString("name");
+                            DocumentSnapshot docC=task.getResult();
+                            Log.d(TAG, docC.getId() + " => " + docC.getData());
+                            trainerName=docC.getString("name");
+
+                            String s="Trainer: " + trainerName;
+                            TextView showTrainer=(TextView)findViewById(R.id.textViewTrainer);
+                            showTrainer.setText(s);
                         }
                     });
-
-                    String s="Trainer: " + trainerName;
-                    TextView showTrainer=(TextView)findViewById(R.id.textViewTrainer);
-                    showTrainer.setText(s);
 
                     DocumentReference contact2=db.collection("customerList").document(trainer).collection("schedule").document("schedule");
                     contact2.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
@@ -216,7 +253,7 @@ public class TimeTable extends AppCompatActivity {
                             for(int i=0; i<13; i++) {
                                 for(int j=0; j<7; j++) {
                                     buttons[i][j].setText(weekDay[j][i]);
-                                    buttons[i][j].setTextColor(Color.parseColor("#0000ff"));
+                                    buttons[i][j].setTextColor(Color.parseColor("#eeeeee")); //
                                     if(weekDay[j][i].length()>1) {
                                         buttons[i][j].setBackgroundColor(getResources().getColor(R.color.colorAccent));
                                     }
