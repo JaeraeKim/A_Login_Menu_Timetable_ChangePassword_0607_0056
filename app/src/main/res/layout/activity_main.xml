@@ -45,7 +45,7 @@
             android:layout_gravity="center"
             android:layout_margin="7dp"
             android:background="#3000"
-            android:text="eagle"
+            android:text="Login!"
             android:textAllCaps="false"
             android:textColor="#00000f"
             />
