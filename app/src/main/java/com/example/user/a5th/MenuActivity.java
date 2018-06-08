@@ -20,10 +20,17 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         Button timetable=(Button)findViewById(R.id.buttonTimetable);
+        Button changePasswd=(Button)findViewById(R.id.buttonChangePassword);
 
         timetable.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent intent = new Intent(getApplicationContext(),TimeTable.class);
+                MenuActivity.this.startActivity(intent);
+            }
+        });
+        changePasswd.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(),ChangePassword.class);
                 MenuActivity.this.startActivity(intent);
             }
         });
